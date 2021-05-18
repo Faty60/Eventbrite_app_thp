@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'tatic_pages#index'
+  root to: 'static_pages#index'
   get 'static_pages/index'
   get 'static_pages/secret'
   devise_for :users
