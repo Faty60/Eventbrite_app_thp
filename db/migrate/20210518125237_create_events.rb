@@ -9,7 +9,8 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.string :location
 
       t.timestamps
-      t.belongs_to :admins, index: true
+      t.references :admin, index: true
+
     end
   end
 end
