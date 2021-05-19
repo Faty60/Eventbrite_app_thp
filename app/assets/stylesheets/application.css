@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ 
+a 
+ {
+   text-decoration: none;
+   
+ }
+.dropdown-item a
+{
+  color: black;
+}
+
+.dropdown-item p a
+{
+  color: whitesmoke;
+}
