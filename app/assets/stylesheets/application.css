@@ -14,10 +14,21 @@
  *= require_self
  */
 
- 
+ /* NAVBAR */
+.navbar a 
+{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.navbar-brand
+{
+  font-size:x-large;
+}
+
 a 
  {
    text-decoration: none;
+   color: whitesmoke;
    
  }
 .dropdown-item a
@@ -28,4 +39,43 @@ a
 .dropdown-item p a
 {
   color: whitesmoke;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+}
+
+.jumbo-index {
+background-image: url(https://images.pexels.com/photos/3052448/pexels-photo-3052448.jpeg?cs=srgb&dl=pexels-rahul-pandit-3052448.jpg&fm=jpg);
+}
+
+.jumbo-show
+{
+  background-image: url(https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-167092.jpg&fm=jpg);
+}
+
+.jumbo-user-edit
+{
+  background-image: url(https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?cs=srgb&dl=pexels-stas-knop-1626481.jpg&fm=jpg);
+}
+
+.jumbo-event-new
+{
+  background-image: url(https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?cs=srgb&dl=pexels-josh-sorenson-976866.jpg&fm=jpg);
+}
+
+.jumbo-event-show
+{
+  background-image: url(https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?cs=srgb&dl=pexels-wendy-wei-1190297.jpg&fm=jpg);
+}
+
+h1
+{
+  font-weight: bold;
 }

@@ -1,2 +1,57 @@
-<h1>Events#news</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+<div class="jumbotron jumbotron-fluid jumbo-event-new text-center">
+  <div class="container justify-content-center">
+    <h1 class="display-3 text-light">Je crée mon évènement</h1>
+  </div>
+</div>
+
+<div class="container mt-5" style="width: 40rem;">
+  <%=form_tag url_for(events_path), method: 'post' do %>
+    
+
+    <div class="form-group mt-4">
+      <h3>
+        <%= label_tag 'Titre'%>
+      </h3>
+      <%= text_field_tag 'title','', require: true, class: "form-control"%>
+    </div>
+
+    <div class="form-group mt-4">
+      <h3>
+        <%= label_tag 'Description' %>
+      </h3>
+      <%= text_field_tag 'description','', require: true, class: "form-control"%>
+    </div>
+
+    <div class="form-group mt-4">
+      <h3>
+        <%= label_tag "Date de l'évènement" %>
+      </h3>
+      <%= date_field_tag 'start_date','', require: true, class: "form-control"%>
+    </div>
+    
+    <div class="form-group mt-4">
+      <h3>
+        <%= label_tag 'Durée (en minutes)' %>
+      </h3>
+      <%= text_field_tag 'duration','', require: true, class: "form-control"%>
+    </div>
+
+    <div class="form-group mt-4">
+      <h3>
+        <%= label_tag "Lieu de l'évènement" %>
+      </h3>
+      <%= text_field_tag 'location','', require: true, class: "form-control"%>
+    </div>
+
+    <div class="form-group mt-4">
+      <h3>
+        <%= label_tag 'Prix' %>
+      </h3>
+      <%= text_field_tag 'price','', require: true, class: "form-control"%>
+  </div>
+
+
+    <%= submit_tag "Créer", class: "btn btn-primary mt-4"%>
+    
+  <%end%>
+</div>

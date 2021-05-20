@@ -2,3 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.popo
+{
+  display: flex;
+  justify-content: center;
+}
+.card
+{
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  
+  
+}
+.card-header
+{
+  height: 6rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
